@@ -20,6 +20,9 @@ bot.on('message', async(msg) =>{
         let msgcontent = msg.content.replace("!Dkumi","")
         msg.member.send("You have summoned Kumi!!")
     }
+    If (msg.content.startsWith('!hey Kumi')){
+        Let msgcontent = msg.content.replace("!hey Kumi","") 
+        msg.member.send("How may I assist you?")
 })
 bot.login(process.env.BOT_TOKEN);
 
